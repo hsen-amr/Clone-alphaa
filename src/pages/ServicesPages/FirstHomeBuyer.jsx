@@ -2,7 +2,7 @@ import React from 'react';
 import './HomeLoan.css'; // Import the CSS file
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
-import { faPhone, faClock, faCalendar, faPaw, faComment , faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faPaw, faComment , faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import { faTwitter, faWordpress } from '@fortawesome/free-brands-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';
 import { Link } from 'react-router-dom';
