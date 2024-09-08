@@ -1,0 +1,433 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Ensures both sections stretch to the same height */
+  padding: 30px;
+  background-color: #f8f8f8; /* Background color similar to the screenshot */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto); /* Adjust rows as needed */
+  gap: 20px;
+  width: 60%;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  margin: 10px;
+  text-align: left;
+  border-bottom: 5px solid #ff6600; /* Orange bottom border */
+  transition: transform 0.3s ease; /* Ensures the card stretches to fill the container */
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #FF6600; /* Orange color for the title */
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+.card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 30px;
+  color: #FF6600; /* Match icon color with title */
+}
+
+/* Styling the image section on the right */
+.image-section {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Set to auto or inherit */
+}
+
+.side-image {
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Ensure the image takes full height */
+  object-fit: cover; /* Ensures the image scales properly */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* For responsiveness on smaller screens */
+@media screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    width: 100%;
+    grid-template-columns: 1fr; /* Single column layout on smaller screens */
+  }
+
+  .image-section {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section Styling */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://tinybeans.com/wp-content/uploads/2024/01/more-joy-in-familys-every-day-2.jpg') center/cover no-repeat;
+  
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+  z-index: 1;
+ margin-bottom: 15px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Add an overlay for better text contrast */
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: #f4f4f4;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: #f4f4f4;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 800px;
+  animation: fadeIn 2s ease-out;
+}
+
+.cta-button {
+  padding: 15px 40px;
+  background-color: #ff6347;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: fadeInUp 2.5s ease-out;
+}
+
+.cta-button:hover {
+  background-color: #e5533d;
+  transform: translateY(-5px); /* Adds a subtle lift effect on hover */
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+
+.feature {
+  text-align: center;
+  width: 30%;
+}
+
+.feature h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #333131;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  border: #222222 solid;
+}
+.data{
+  display: flex;
+
+}
+.tables{
+  width: 100%;
+  border-collapse: collapse;
+}
+.img{
+  max-width: 100%;
+  height: 500px;
+  display: block;
+  margin: 0 auto;
+}
+.container-contact{
+  display: flex;
+  background-color: white;
+  position: relative;
+  height: 250px;
+  align-content: space-around;
+  margin:150px ;
+  margin-right: 50px;
+
+}
+.contact-us {
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.contact-us h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-us p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.contact-us ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-us li {
+  margin-bottom: 10px;
+}
+
+.contact-us li .fa-location-dot,
+.contact-us li .fa-phone,
+.contact-us li .fa-clock,
+.contact-us li .fa-calendar {
+  margin-right: 10px;
+  color: gold;
+}
+
+.contact-us .social-icons {
+  margin-top: 20px;
+}
+
+.contact-us .social-icons .fa-paw,
+.contact-us .social-icons .fa-twitter,
+.contact-us .social-icons .fa-paper-plane,
+.contact-us .social-icons .fa-wordpress,
+.contact-us .social-icons .fa-comment {
+  margin-right: 10px;
+  color: gold;
+  font-size: 18px;
+  align-items: start;
+}
+.infos{
+align-items: start;
+}
+.image-container{
+  height: 100PX;
+  width: 50%;
+ 
+}
+.img-con{
+  position: absolute;
+  right: 10%;
+
+  height: 250px;
+}
+.contact-card {
+  /* Set background image using URL */
+  background-image: url('https://i.pinimg.com/736x/fa/21/f1/fa21f1c3e2607d145b03b230697a10b8.jpg');
+  background-repeat: no-repeat;  /* Prevent image tiling */
+  background-size: cover;         /* Resize image to fit container */
+  background-position: center;    /* Center the image */
+  min-height: 300px;              /* Set minimum height for content */
+  display: flex;    
+  flex-direction: column;              /* Allow for vertical centering */
+  justify-content: space-around;        /* Center content horizontally */
+  align-items: center;            /* Center content vertically */
+}
+
+/* Assuming a button class exists (replace with your actual button styles): */
+.contact-card button {
+  background-color: white; /* Remove default button background */
+  border: none;                    /* Remove default button border */
+  color: black;                    /* Text color for button */
+  padding: 10px 20px;              /* Button padding */
+  font-size: 16px;                  /* Button font size */
+  cursor: pointer;                 /* Set cursor to pointer on hover */
+  /* Add any other desired button styles here */
+}
+/*nwe*/
+.contact-us-last {
+  justify-content: space-around;
+  
+  display: flex;
+  padding: 20px;
+  padding-left:30px ;
+  padding-right: 30px;
+  background-color: #333131; /* Dark background color */
+  color: #fff; /* White text color */
+}
+
+.contact-us-last h2 {
+  color: gold;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-us-last p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.contact-info-last ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info-last li {
+  margin-bottom: 10px;
+}
+
+.contact-info-last li .fa-location-dot,
+.contact-info-last li .fa-phone,
+.contact-info-last li .fa-envelope {
+  margin-right: 10px;
+  color: gold;
+  
+}
+
+.opening-hours {
+  margin-top: 20px;
+  background-color:#333131 ;
+}
+
+.opening-hours h3 {
+  color: gold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.gold-color{
+  color: gold;
+}
+.opening-hours table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.opening-hours table th,
+.opening-hours table td {
+  padding: 5px;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.schedule-visit-btn {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: gold;
+  color: 222222;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons .fa-paw,
+.social-icons .fa-twitter,
+.social-icons .fa-paper-plane,
+.social-icons .fa-wordpress,
+.social-icons .fa-comment {
+  font-size: 24px;
+  color:gold; /* Change to your desired color */
+}
