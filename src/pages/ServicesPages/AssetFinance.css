@@ -1,0 +1,398 @@
+/* HomeLoans.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.home-loans-container {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background-image: url('https://www.asialinkfinance.com.ph/wp-content/uploads/2023/06/shutterstock_2129947046.jpeg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-loans-header {
+  background-color: #fff; /* White background for header */
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for the header */
+}
+
+.home-loans-header h1 {
+  font-size: 2.5rem;
+  align-content: start;
+  color: #333; /* Dark grey text color */
+}
+
+.home-loans-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.home-loans-content h2 {
+  font-size: 3rem;
+  margin: 0;
+  height: 300px;
+  justify-self: center;
+  align-content: center;
+
+}
+
+.arrow-down {
+  margin-top: 20px;
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.home-container {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #fff;
+}
+
+.title {
+  color: #666;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.main-heading {
+  color: #333;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.subheading {
+  color: #444;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 2rem 0;
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  text-align: left;
+  border-bottom: 5px solid #ff6600; /* Orange bottom border */
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect on Entire Card */
+.service-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px); /* Lifts the card slightly when hovered */
+  
+}
+
+/* Hover Effect on Text */
+.service-card h3:hover, 
+.service-card p:hover {
+  color: #ff7a00; /* Change to orange when hovered */
+  transition: color 0.5s ease; /* Smooth transition for color */
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+h3 {
+  color: #333;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.service-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* HomeLoan Container */
+.home-loan-container-2 {
+  background-color: #f7f7f7;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.home-loan-content-2 {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.home-loan-image-2 img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/* Text Section */
+.home-loan-text-2 {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loan-category-2 {
+  margin-bottom: 10px;
+}
+
+.category-badge-2 {
+  background-color: #ff7a00;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.loan-heading-2 {
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.loan-description-2 {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* Loan Types */
+.loan-types-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.loan-type-2 h3 {
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.loan-type-2 p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-loan-content-2 {
+    flex-direction: column;
+  }
+
+  .home-loan-image-2 img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .loan-types-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Main container for the mortgage estimate section */
+.estimate-container {
+  background-color: #333131; /* Dark navy background */
+  padding: 20px 40px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+/* Content inside the container */
+.estimate-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Text section */
+.estimate-text h2 {
+  color: #ffffff; /* White color for heading */
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.estimate-text p {
+  color: #cfcfcf; /* Light grey color for paragraph */
+  font-size: 16px;
+  margin: 10px 0 0 0;
+}
+
+/* Button styling */
+.estimate-button button {
+  background-color: gold; /* Orange background */
+  color: #000000; /* Black text color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.estimate-button button:hover {
+  background-color: #e66a00; /* Darker orange on hover */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .estimate-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .estimate-button {
+    margin-top: 20px;
+  }
+}
+
+/* HomeBuyer.css */
+.homebuyer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  color: #333;  
+  position: relative;
+  
+}
+
+.homebuyer-image-section {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.homebuyer-image {
+  max-width: 100%;
+  height: 200PX;
+  border-radius: 8px;
+  height: 800px;
+  
+}
+
+.homebuyer-text-section {
+  flex: 2;
+  text-align: center;
+}
+
+h1 {
+  color: #1f3e72;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #1f3e72;
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.homebuyer-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.homebuyer-service {
+  flex: 1 1 45%;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 18px;
+  color: #1f3e72;
+  margin-bottom: 10px;
+}
+
+.homebuyer-service p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}

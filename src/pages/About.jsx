@@ -9,21 +9,6 @@ import { Link } from 'react-router-dom';
 
 import './CSS/About.css';
 
-const AboutSection = styled.section`
-  padding: 4rem 2rem;
-  background-color: #f4f4f9;
-`;
-
-const AboutTitle = styled.h1`
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-`;
-
-const AboutText = styled.p`
-  font-size: 1.2rem;
-  max-width: 800px;
-  margin: 0 auto;
-`;
 
 const About = () => {
   return (

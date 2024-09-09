@@ -38,21 +38,6 @@ const ContentText = styled.p`
   font-size: 1rem;
   margin-bottom: 20px;
 `;
-const ImageContainer = styled.div`
-  width: 40%;
-  position: relative;
-  overflow: hidden;
-  margin-left: 50px; 
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  border-bottom: 5px solid #ff6347;
-`;
-
-const Image = styled.img`
-  width: 100%;
-  height: auto;
-  transition: opacity 0.5s ease;
-`;
 
 const MoreLink = styled.a`
   color: #333;
@@ -102,55 +87,6 @@ const HomePage = () => {
 
     return () => clearInterval(interval);
   }, []);
-
-  const services = [
-    {
-      title: "Home Loans",
-      description: "At Alpha Financial Solutions, we specialize in guiding you through every step of your home loan journey.",
-      icon: "🏠"
-    },
-    {
-      title: "First Home Buyer",
-      description: "A first-time homebuyer is an individual or household purchasing a home for the first time. First-time homebuyers may be eligible for various incentives, such as lower down payment requirements, grants, or tax credits, which aim to make homeownership more accessible.",
-      icon: "🏡"
-    },
-    {
-      title: "Refinancing",
-      description: "Refinancing is the process of replacing an existing loan with a new one, typically to take advantage of better terms, such as a lower interest rate, a different loan term, or to switch from an adjustable-rate mortgage to a fixed-rate mortgage. Homeowners often refinance to reduce their monthly mortgage payments, pay off their loan more quickly, or access equity in their home through a cash-out refinance.",
-      icon: "🔄"
-    },
-    {
-      title: "Investment Property",
-      description: "An investment property is a real estate asset purchased with the intention of generating income or profit, rather than being used as a primary residence. These properties can include residential homes, apartment buildings, commercial spaces, or land. Investors typically buy these properties to earn rental income, benefit from property appreciation over time,",
-      icon: "🏢"
-    },
-    {
-      title: "Self Managed Super Fund (SMSF)",
-      description: "At Alpha Financial Solutions, we offer expert guidance on Self-Managed Super Fund (SMSF) loans to help you maximize your investment potential. Whether you’re looking to acquire residential or commercial property through your SMSF, our team provides tailored advice and innovative financing solutions to suit your needs.",
-      icon: "💰"
-    },
-    {
-      title: "Asset Finance",
-      description: "At Alpha Financial Solutions, we offer tailored asset and vehicle finance solutions to help you acquire the equipment or vehicle you need with ease. Whether you’re looking to purchase a new car, upgrade your business equipment, or finance a fleet, our team provides expert advice and customized financing options.",
-      icon: "🚗"
-    },
-    {
-      title: "Personal Loans",
-      description: "At Alpha Financial Solutions, we offer a range of personal loan options designed to meet your unique financial needs. Whether you’re looking to consolidate debt, fund a major purchase, or cover unexpected expenses, our team is dedicated to finding the right solution for you.",
-      icon: "💳"
-    },
-    {
-      title: "Expat Loans",
-      description: "At Alpha Financial Solutions, we offer specialized expat loan services designed to meet the unique needs of expatriates. Whether you’re looking to purchase a property, invest, or manage financial obligations in a new country, our expert team provides tailored solutions and comprehensive support.",
-      icon: "🌎"
-    },
-    {
-      title: "Commercial/Business Loans",
-      description: "At Alpha Financial Solutions, we specialize in providing comprehensive commercial and business loan solutions tailored to your unique needs. Whether you’re seeking capital for expansion, equipment purchase, or working capital, our team is dedicated to finding the right financing option to fuel your growth.",
-      icon: "💼"
-    }
-  ];
-  
 
   
 

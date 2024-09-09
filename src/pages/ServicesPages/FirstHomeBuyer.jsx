@@ -95,10 +95,7 @@ const FirstHomeBuyer = () => {
 
 </div>
 
-   
-
-    ****************************************************
-    <div className="estimate-container">
+       <div className="estimate-container">
       <div className="estimate-content">
         <div className="estimate-text">
           <h2>How To Estimate Mortgage Payments</h2>

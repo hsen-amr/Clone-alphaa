@@ -3,36 +3,6 @@ import styled from 'styled-components';
 import { FaHandshake, FaRegMoneyBillAlt, FaChartLine } from 'react-icons/fa';
 
 
-const ServicesSection = styled.section`
-  padding: 4rem 2rem;
-  background-color: #fff;
-  text-align: center;
-`;
-
-const ServicesTitle = styled.h1`
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-`;
-
-const ServicesList = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-`;
-
-
-
-const ServiceCardTitle = styled.h2`
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-`;
-
-const ServiceCardText = styled.p`
-  font-size: 1.1rem;
-`;
-
 const ServicesContainer = styled.div`
   padding: 3rem 2rem;
   background-color: #f9f9f9;
